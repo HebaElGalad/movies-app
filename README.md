@@ -1,44 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Movies App
 
-## Available Scripts
+###Rating component:
+Create a component that displays rating in the form of stars. The rating scale is from 0 to 10. Number of stars should be rounded to the nearest half, for example:
 
-In the project directory, you can run:
+- Rating 5 would display 2 stars and a half.
+- Rating 5.5 would also display 2 stars and a half.
+- Rating 5.6 would display 3 stars.
+- Rating 8.1 would display 4 stars (ignore what's on the design, it's not correct).
 
-### `npm start`
+_Explanation:_
+5 / 10 = 0.5, and 0.5 \* 5 stars = 2.5
+5.5 / 10 = 0.55, and 0.55 \* 5 stars = 2.75 (rounds to lowest)
+5.6 / 10 = 0.56, and 0.56 \* 5 stars = 2.8 stars (rounds to highest)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+###Items counter:
+Create a component that displays a heart icon (font awesome is already included) with a count badge.
+The component accepts a 'max' and 'value' props. **The outline around the circle reflects the percentage of the current count over the max value**, for example:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+value = 5 and max = 10 then the circle should be 50% filled
+value = 4 and max = 6 then the circle should be 66.6% filled
+value = 1 and max = 5 then the circle should be 20% filled
 
-### `npm test`
+###Save button:
+Create a simple button that accepts the label through its children prop.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###Header:
+Create a header component that is composed of other components:
 
-### `npm run build`
+- Logo
+- Nav
+- Search
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###Image: (no preview)
+Create an image component that accepts the following props:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- src: URL of the image
+- alt: Alternative text that describes the image
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**The component should display a simple spinner and once the image loads the spinner should disappear and the image should fade in.**
 
-### `npm run eject`
+###Simple card:
+Create a simple card component (normal state on the right and hover state on the left).
+**The rating component should slide in from the bottom when the user hovers over the card.**
+The component should accept the following props:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- title
+- image
+- rating
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###Fancy card:
+Create a fancy card component that accepts the following props:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- title
+- description
+- image
+- rating
+- onButtonClick
+- onClick (on title click)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**When the user hovers over the image, the image would flip (on the Y axis) and the description should appear on the back of the image.**
