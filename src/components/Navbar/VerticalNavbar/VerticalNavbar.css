@@ -1,0 +1,27 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.vertical-nav {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.vertical-nav__item {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.vertical-nav__link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.vertical-nav__link:hover, .vertical-nav__link:active {
+  color: var(--sky-blue);
+}
