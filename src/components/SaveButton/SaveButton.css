@@ -1,0 +1,25 @@
+.button {
+  padding: 12px 24px;
+  background-color: var(--sky-blue);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 16px;
+  color: var(--white);
+  vertical-align: middle;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--sky-blue-dark);
+}
+
+.button--save {
+  padding: 12px 24px 12px 36px;
+}
+
+.button__icon {
+  position: relative;
+  left: -18px;
+  top: 1px;
+}
