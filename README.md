@@ -90,3 +90,7 @@ Create a fancy card component that accepts the following props:
 - onClick (on title click)
 
 **When the user hovers over the image, the image would flip (on the Y axis) and the description should appear on the back of the image.**
+
+## Authors
+
+The [app design](https://github.com/teefouad/levelup/tree/full-app) and idea credits are for **Mostafa Fouad**
