@@ -1,0 +1,11 @@
+.cards-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.cards-container .card__wrapper {
+  width: 30%;
+  margin-bottom: 2em;
+}
