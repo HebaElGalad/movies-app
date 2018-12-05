@@ -1,0 +1,18 @@
+.card__rating {
+  position: relative;
+  margin: 0 auto 10px;
+  color: var(--light-grey);
+}
+
+.rating__wrapper--full {
+  position: absolute;
+  top: 1px;
+  color: var(--canary-yellow);
+}
+
+.rating__text {
+  display: inline-block;
+  color: var(--canary-yellow);
+  font-size: 18px;
+  margin-left: 16px;
+}
