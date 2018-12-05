@@ -1,0 +1,12 @@
+.spinner {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #eee;
+  border-top: 3px solid #01bcd4;
+  animation: 500ms spin infinite ease-in-out;
+}
