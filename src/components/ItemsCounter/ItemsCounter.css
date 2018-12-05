@@ -1,0 +1,57 @@
+.flex-wrapper {
+  /* display: flex; */
+  /* flex-flow: row nowrap; */
+  /* width: 12%; */
+}
+
+.counter {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start ;
+  align-items: center;
+  flex: 1;
+}
+
+.circular-chart {
+  display: inherit;
+  max-width: 10%;
+  height: 36px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: var(--light-grey);
+  stroke-width: 3;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.stroke-color .circle {
+  stroke: var(--sky-blue);
+}
+
+.percentage {
+  color: var(--sky-blue);
+  text-anchor: middle;
+}
+
+.counter__badge {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--sky-blue);
+  color: var(--white);
+  text-align: center;
+  margin-right: 8px;
+}
