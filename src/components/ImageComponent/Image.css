@@ -1,0 +1,12 @@
+.card__image {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  /* height: 40rem; */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(359deg);
+  }
+}
