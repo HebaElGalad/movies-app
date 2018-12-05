@@ -1,0 +1,29 @@
+.header__search-form {
+  padding: 12px 0;
+  display: inline-flex;
+  flex: 1;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  display: block;
+}
+
+.search-form__input {
+  width: 250px;
+  background-color: var(--light-grey);
+  padding: 12px 8px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-form__input:focus {
+  border-color: var(--sky-blue);
+}
