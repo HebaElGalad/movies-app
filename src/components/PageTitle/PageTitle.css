@@ -1,0 +1,13 @@
+.page__title {
+  height: 80px;
+  padding: 22px 0;
+  background-color: var(--sky-blue);
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 36px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 400;
+}
