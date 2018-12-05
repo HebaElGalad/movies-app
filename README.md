@@ -1,6 +1,7 @@
 # Movies App
 
-###Rating component:
+### Rating component:
+
 Create a component that displays rating in the form of stars. The rating scale is from 0 to 10. Number of stars should be rounded to the nearest half, for example:
 
 - Rating 5 would display 2 stars and a half.
@@ -13,7 +14,8 @@ _Explanation:_
 5.5 / 10 = 0.55, and 0.55 \* 5 stars = 2.75 (rounds to lowest)
 5.6 / 10 = 0.56, and 0.56 \* 5 stars = 2.8 stars (rounds to highest)
 
-###Items counter:
+### Items counter:
+
 Create a component that displays a heart icon (font awesome is already included) with a count badge.
 The component accepts a 'max' and 'value' props. **The outline around the circle reflects the percentage of the current count over the max value**, for example:
 
@@ -21,17 +23,20 @@ value = 5 and max = 10 then the circle should be 50% filled
 value = 4 and max = 6 then the circle should be 66.6% filled
 value = 1 and max = 5 then the circle should be 20% filled
 
-###Save button:
+### Save button:
+
 Create a simple button that accepts the label through its children prop.
 
-###Header:
+### Header:
+
 Create a header component that is composed of other components:
 
 - Logo
 - Nav
 - Search
 
-###Image: (no preview)
+### Image: (no preview)
+
 Create an image component that accepts the following props:
 
 - src: URL of the image
@@ -39,7 +44,8 @@ Create an image component that accepts the following props:
 
 **The component should display a simple spinner and once the image loads the spinner should disappear and the image should fade in.**
 
-###Simple card:
+### Simple card:
+
 Create a simple card component (normal state on the right and hover state on the left).
 **The rating component should slide in from the bottom when the user hovers over the card.**
 The component should accept the following props:
@@ -48,7 +54,8 @@ The component should accept the following props:
 - image
 - rating
 
-###Fancy card:
+### Fancy card:
+
 Create a fancy card component that accepts the following props:
 
 - title
