@@ -1,0 +1,87 @@
+.card__wrapper {
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card__info {
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 40px 20px 20px 20px;
+}
+
+.card__title {
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.card__link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.card__link:hover {
+  color: var(--sky-blue);
+}
+
+/* FLIP CARD STYLE */
+.flip-box {
+  perspective: 1000px;
+  padding: 20px;
+}
+
+.flip-box:hover {
+  cursor: pointer;
+}
+
+.flip-box:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-box, .flip-box__front, .flip-box__back {
+  width: 100%;
+  height: 25rem;
+}
+
+.flipper {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box__front, .flip-box__back {
+  position: absolute;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.flip-box__front {
+  background-color: var(--light-grey);
+  border-radius: 10px;
+}
+
+.flip-box__back {
+  background-color: var(--sky-blue-light);
+  color: var(--white);
+  border-radius: 10px;
+  transform: rotateY(180deg);
+}
+
+.flip-box__back .card__description {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 16px;
+  margin: 0;
+}
