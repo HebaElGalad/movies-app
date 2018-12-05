@@ -1,0 +1,67 @@
+:root {
+  --gutter: 10px;
+  --grid-container: 1200px;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--grid-container);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.row {
+  margin-right: calc(-1 * var(--gutter));
+  margin-left: calc(-1 * var(--gutter));
+}
+
+.row::before,
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+  margin-left: var(--gutter);
+  margin-right: var(--gutter);
+}
+
+.row > .col {
+  float: left;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.row--2 > .col {
+  width: 50%;
+}
+
+.row--3 > .col {
+    width: 33.333333%;
+}
+
+.row--3 > .col--2 {
+    width: 66.666667%;
+  }
+
+.row--4 > .col {
+  width: 25%;
+}
+.row--4 > .col--2 {
+  width: 50%;
+}
+.row--4 > .col--3 {
+  width: 75%;
+}
+
+.offset--3 {
+  margin-left: 25%;
+}
+
+.offset--4 {
+  margin-left: 33.333333%;
+}
