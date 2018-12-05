@@ -1,0 +1,10 @@
+.border--top {
+  border-top: 2px solid #01bcd4;
+}
+
+.page__content {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  justify-content: space-between;
+}

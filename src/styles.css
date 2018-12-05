@@ -1,0 +1,50 @@
+/* FontAwesome Icons */
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/solid.css');
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css');
+
+:root {
+  --gutter: 10px;
+  --grid-container: 1000px;
+
+/* COLORS */
+  --white: #fff;
+  --black: #000;
+  --light-grey: #eee;
+  --canary-yellow: #fdd835;
+  --sky-blue: #01bcd4;
+  --sky-blue-light: rgba(0, 180, 203, 0.75);
+  --sky-blue-dark: #00b4cb;
+}
+
+/* GENERAL STYLES */
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: #f0f0f0;
+}
+
+/* GIRG SYSTEM */
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--grid-container);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
