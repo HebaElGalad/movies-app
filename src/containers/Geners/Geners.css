@@ -1,0 +1,23 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.side-nav {
+  display: flex;
+  background-color: #fff;
+  padding: 4px 12px;
+  width: 16%;
+  margin-right: 24px;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.cards .simple-card__wrapper {
+  width: 23%;
+  margin-bottom: 24px;
+}
