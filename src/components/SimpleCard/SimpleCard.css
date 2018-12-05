@@ -1,0 +1,57 @@
+.simple-card__wrapper {
+  max-width: 25%;
+  text-align: center;
+  position: relative;
+}
+
+.simple-card__wrapper:hover {
+  cursor: pointer;
+}
+
+.simple-card__wrapper:hover .simple-card__title {
+  bottom: 20%;
+}
+
+.simple-card__wrapper:hover .simple-card__rating-warper {
+  opacity: 1;
+}
+
+.simple-card__title {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  bottom: 10%;
+  line-height: 1.4;
+  font-size: 16px;
+  padding: 0 12px;
+}
+
+.simple-card__link {
+  color: var(--white);
+}
+
+.simple-card__link, .simple-card__rating {
+  text-decoration: none;
+}
+
+.simple-card__rating {
+  position: relative;
+  bottom: -82%;
+}
+
+.simple-card__wrapper:hover .simple-card__rating > .card__rating {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.simple-card__rating-warper {
+  background-color: var(--sky-blue-light);
+  border-radius: 10px;
+  position: absolute;
+  opacity: 0;
+  transform: translate(0%, -100%);
+  transition: 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
