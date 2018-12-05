@@ -1,0 +1,28 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.header__nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.nav__item {
+  display: inline-flex;
+  flex: 1;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.nav__link:hover {
+  color: var(--sky-blue);
+}
